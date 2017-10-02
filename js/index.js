@@ -1,4 +1,15 @@
 
+// http://code.hootsuite.com/html5/
+// Detects if the device can upload images
+function isUploadSupported() {
+    if (navigator.userAgent.match(/(Android (1.0|1.1|1.5|1.6|2.0|2.1))|(Windows Phone (OS 7|8.0))|(XBLWP)|(ZuneWP)|(w(eb)?OSBrowser)|(webOS)|(Kindle\/(1.0|2.0|2.5|3.0))/)) {
+        return false;
+    }
+    var elem = document.createElement('input');
+    elem.type = 'file';
+    return !elem.disabled;
+};
+
 var imageList = ["16860_639046972964_1749257_n.jpg",
 "10047_10100539539595504_1522544637_n.jpg",
 "16860_639046972964_1749257_n.jpg",
@@ -209,6 +220,24 @@ var imageList = ["16860_639046972964_1749257_n.jpg",
 "14183964_10102104344034864_4354071556606828440_n.jpg",
 "17353455_10102469853999964_3146477437354866419_n.jpg",
 "19113970_10208845094716836_1435936529698842718_n.jpg",
+'FullSizeRender',
+'FullSizeRender-1',
+'FullSizeRender-3',
+'FullSizeRender-4',
+'FullSizeRender-5',
+'FullSizeRender-6',
+'FullSizeRender-7',
+'FullSizeRender-8',
+'FullSizeRender-9',
+'FullSizeRender-10',
+'FullSizeRender-11',
+'FullSizeRender-12',
+'FullSizeRender-13',
+'FullSizeRender-14',
+'FullSizeRender-15',
+'IMG_6872',
+'IMG_6873',
+'nsfwgman'
 ];
 
 
