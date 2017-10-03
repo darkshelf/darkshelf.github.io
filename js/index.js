@@ -271,9 +271,9 @@ function buildBG(item, index) {
 };
 
 function addImages(){
-	shuffledList.slice(count, count + 30).forEach(buildBG);
+	shuffledList.slice(count, count + 50).forEach(buildBG);
 
-	count = count + 30;
+	count = count + 50;
 	if (count >= shuffledList.length) {
 		document.getElementById('button').className = 'disappear';
 	}
